@@ -270,3 +270,27 @@
     @media(prefers-reduced-motion:reduce){.film-track.is-animating{transition:none}.film-dot::before{transition:none}}
     @media(forced-colors:active){.film-carousel,.film-step,.film-footer{border-color:CanvasText;background:Canvas;color:CanvasText;box-shadow:none}.film-dot{color:CanvasText}}
     @media print{.workshops-layout{display:block}.workshops-layout>.workshops-instagram,.workshops-film-section{display:none}.workshops-column{display:block}.workshops-column>*+*{margin-top:1.25rem}.workshops-practical{margin-top:1.25rem}}
+
+
+    /* Rozwijany opis i informacje o usługach Julianny. */
+    .profile-bio-details{margin-top:.75rem;min-width:0}
+    .profile-bio-details>summary{display:flex;align-items:center;gap:.625rem;width:fit-content;max-width:100%;min-height:44px;padding:.375rem 0;list-style:none;cursor:pointer;color:var(--gold);font-size:1rem;font-weight:600;line-height:1.5}
+    .profile-bio-details>summary::-webkit-details-marker{display:none}
+    .profile-bio-details>summary>span{text-decoration:underline;text-underline-offset:4px}
+    .profile-bio-details>summary:hover{color:var(--navy)}
+    .profile-bio-details .profile-read-less{display:none}
+    .profile-bio-details[open] .profile-read-more{display:none}
+    .profile-bio-details[open] .profile-read-less{display:inline}
+    .profile-details-chevron{flex:0 0 auto}
+    .profile-bio-details[open] .profile-details-chevron{transform:rotate(180deg)}
+    .profile-bio-expanded{padding-top:1rem;text-align:start;word-spacing:normal}
+    .profile-bio-expanded>p+p{margin-top:1.5rem}
+    .profile-bio .profile-info-card{margin-top:1.75rem;padding:clamp(1.125rem,2.5vw,1.75rem)}
+    .profile-bio .profile-info-card h2{max-width:none;margin-bottom:1.125rem;font-size:clamp(1.6rem,1.3rem + .7vw,2rem)}
+    .profile-services{margin:0;font-size:1rem;line-height:1.6}
+    .profile-services>div{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:.5rem 1rem;align-items:baseline;padding-block:.875rem;border-top:1px solid var(--line)}
+    .profile-services dt{min-width:0}
+    .profile-services dd{margin:0;font-weight:700;white-space:nowrap;color:var(--ink)}
+    .profile-bio .profile-help-list{margin:0;padding-left:1.25rem;font-size:1rem;line-height:1.7}
+    .profile-bio .profile-help-list li+li{margin-top:.5rem}
+    .profile-help-list li::marker{color:var(--gold)}
